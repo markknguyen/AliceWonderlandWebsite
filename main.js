@@ -49,8 +49,8 @@ const canvas = document.querySelector(".canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const context = canvas.getContext ("2d");
-const frameCount = 1;
-const currentFrame = (dex) => `.folder/${(dex+1).toString()}.jpg`;
+const frameCount = 179;
+const currentFrame = (dex) => `.best-ball/${(dex+1).toString()}.jpg`;
 const images = [];
 let animation = {frame : 0}
 
