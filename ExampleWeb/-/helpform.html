@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to help</title>
+<link rel="icon" href="peace-icon.png">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="quarterprojectcss.css">
+</head>
+<body>
+
+<div class="topnav">
+  <a  href="index.html"><img id="logo" alt="Home" src="peace-icon.png"></a>
+  <a href="webpage2.html">UN-SDG 16</a>
+  <a href="webpage3.html">Progress</a>
+  <a class="active" href="helpform.html">How to Help</a>
+</div> 
+  <div class="Parallax"> </div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">CONTRIBUTE!</span>
+  </div>
+</div>
+
+<div id="About" >
+  <h3> Fill out this form to apply to help us reach our goal!</h3>
+ <form style=" text-align: center;margin-left: auto;margin-right: auto;" >
+<fieldset style=" width: 20%; text-align: center;margin-left: auto;margin-right: auto;">
+    <legend style="font-size: 23px; text-align: center;margin-left: auto;margin-right: auto;">Application Form:</legend>
+    First name:<br>
+    <input type="text" name="firstname" >
+    <br><br>
+    Last name:<br>
+    <input type="text" name="lastname" >
+    <br><br>
+    Service Hours Accumulated:<br>
+    <input type="number" name="quantity" min="0" max="100">
+    <br><br>
+    If interested in donating money, how much would you donate ($)?:<br>
+    <input type="number" name="quantity" min="0" max="100">
+    <br><br>
+    Date of Birth:<br>
+    <input type="date" name="bday" >
+    <br><br>
+    How interested are you in reaching our goal:<br>
+    <input type="range" name="points" min="0" max="10">
+    <br><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other" checked> Other
+  <b><br>
+  <br>
+  How would you contribute to our goal?<br>
+  <select name="typeofchad">
+    <option value="popular">Outdoor Service</option>
+    <option value="goodfit">Social Media</option>
+    <option value="rich">Money</option>
+    <option value="other">Other</option>
+  </select>
+  <br>
+  If you choose 'other', provide a brief explanation below:<br>
+      <textarea name="message" style="width:100px; height:50px;">
+</textarea>
+  <br><br>
+  Any additional things we should know, or questions for us, please write below:<br>
+     <textarea name="message" style="width:300px; height:250px;">
+</textarea> 
+  <br>
+  </fieldset>
+      <button id="myBtn">Submit</button>
+      
+
+      <input type="reset" value="Reset" class="center">
+</form>
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Thank you!</h2>
+    </div>
+    <div class="modal-body">
+      <p>We will take this on to our boards attention.</p>
+      <p>You will be hearing from us soon!</p>
+    </div>
+    <div class="modal-footer">
+      <h3>We appreciate your contribution!</h3>
+    </div>
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</div>
+
+
+
+<br>
+
+<div class="bgimg-1">
+  
+</div>
+
+</body>
+</html>
