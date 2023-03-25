@@ -79,7 +79,7 @@ body, html {
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: rgb(255, 237, 247);
   color: #fff;
   padding: 18px;
   font-size: 25px;
