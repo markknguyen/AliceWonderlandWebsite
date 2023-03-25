@@ -45,7 +45,38 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(type, 2000); // Adjust the initial waiting time in milliseconds here
 });
 
-var canvas = document.getElementById("introCanvas");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = '#FF0000';
-ctx.fillRect(1,1,150,75); 
+const canvas = document.querySelector(".canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+const context = canvas.getContext ("2d");
+const frameCount = 1;
+const currentFrame = (dex) => `.folder/${(dex+1).toString()}.jpg`;
+const images = [];
+let animation = {frame : 0}
+
+for (let i = 0; i < frameCount; i++) {
+  const img = new Image();
+  img.src = currentFrame(i);
+  images.push(img);
+}
+
+gsap.to(ball, {
+  frame: frameCount-1,
+  snap: "frame",
+  ease: "none",
+  scrollTrigger: {
+    scrub: true,
+    pin: "canvas",
+    end: "400%",
+  },
+  onUpdate: render,
+});
+
+images[0].onload = render;
+
+function render() {
+  context.canvas.width = images[0].width;
+  context.canvas.height = images[0].height;
+  context.clearRect(0,0,canvas.width,canvas.height);
+  context.drawImage(images[animation.frame],0,0)
+}
