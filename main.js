@@ -50,7 +50,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const context = canvas.getContext("2d");
-const frameCount = 179;
+const frameCount = 50;
 
 const currentFrame = (index) => `./best-ball/${(index + 1).toString()}.jpg`;
 
@@ -69,7 +69,7 @@ gsap.to(ball, {
   snap: "frame",
   ease: "none",
   scrollTrigger: {
-    scrub: 0.5,
+    scrub: true,
     pin: "canvas",
     end: "500%",
   },
