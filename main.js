@@ -79,6 +79,7 @@ gsap.to(ball, {
 gsap.from(".navbar", {opacity:0, scrub:true, 
     scrollTrigger: {duration:1, scrub:true, start:"600%", end:"650%"}})
 
+<<<<<<< Updated upstream
 // tl.fromTo(
 //   ".navbar",
 //   {opacity: 0,
@@ -87,6 +88,12 @@ gsap.from(".navbar", {opacity:0, scrub:true,
 //     scrub: true,
 //     end: ""
 //   },
+=======
+// gsap.fromTo(
+//   ".ball-text",
+//   {
+//     opacity: 0,
+>>>>>>> Stashed changes
 //   },
 //   {
 //     opacity: 1,
