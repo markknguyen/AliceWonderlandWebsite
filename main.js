@@ -80,10 +80,8 @@ gsap.to(ball, {
 gsap.from(".navbar", {opacity:0, scrub:true, 
     scrollTrigger: {duration:1, scrub:true, start:"600%", end:"650%"}})
 
-gsap.fromTo(".CrisisTitle", {opacity:0, scrub:true, 
-    scrollTrigger: {scrub:true, start:"bottom 50%"}},
-    {opacity:1, duration:2})
 
+    
 images[0].onload = render;
 
 function render() {
