@@ -22,6 +22,7 @@
 
 .navbar li {
   margin: 0 10px;
+  
 }
 
 .navbar a {
@@ -32,10 +33,10 @@
   transition: color 0.3s ease-in-out;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   color: #FF69B4;
   font-size: x-large;
-}
+} */
 
 .navbar.scroll {
   background-color: white;
@@ -90,16 +91,17 @@ canvas {
   text-align: center;
 }
 
-.Transition, #CrisisTitle, #Problem, #Science, #Generel, #Personal {
+.Transition, #Problem, #Science, #Generel, #Personal {
   display:table-row;
   vertical-align: top;
   row-gap: 0;
 }
 
-#CrisisTitle{
+
+/* #CrisisTitle{
   background-color: #000000;
   height: 1000px;
-}
+} */
 
 .Transition{
   background: linear-gradient( black,rgb(0, 0, 0), rgb(7, 3, 59), rgb(26, 16, 121), rgb(42, 17, 186) );
@@ -125,8 +127,83 @@ canvas {
 
 }
 
+/* .crisistext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 75%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+} */
 
-p {
+.problemtext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 75%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(255, 203, 249);
+  text-align: center;
+}
+
+.sciencetext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 75%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(143, 182, 255);
+  text-align: center;
+}
+
+.generaltext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 75%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: black red;
+  text-align: center;
+}
+
+.personaltext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 75%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+/* p {
   margin-left: 7%;
   margin-right: 7%;
   margin-bottom: 50px;
@@ -142,5 +219,5 @@ p {
   /* padding: 50px;
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; */
-}
+  border-radius: 10px; */ 
+

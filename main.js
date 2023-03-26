@@ -88,3 +88,4 @@ function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[ball.frame], 0, 0);
 }
+
