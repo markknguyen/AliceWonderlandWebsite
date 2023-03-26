@@ -1,137 +1,130 @@
 
 .navbar {
-    background-color: #e63ae4;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    overflow: hidden;
-    transition: background-color 1s ease-in-out;
-  }
+  background-color: #e63ae4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+  transition: background-color 1s ease-in-out;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #FF69B4;
+  font-size: x-large;
+}
+
+.navbar.scroll {
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scroll a {
+  color: #e63ae4;
+} 
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #e63ae4;
+} 
+
+body,html {
+  background-color:none;
+  height: 100%;
+  margin:0;
+  padding:0;
+  border: 0;
+  font: 400 15px/1.8 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.full_width{
+  width: 100%;
+  display:table;
+  table-layout:fixed;
+  border-spacing: 0 0;
+}
+.BOOM {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+}
+
+#Crisistitle, #Problem, #Science, #Generel, #Personal {
+  display:table-row;
+  vertical-align: top;
+}
+
+#Crisistitle{
+  background-color: lightblue;
+}
+
+#Problem{
+  background-color: #bfa4e0;
   
-  .navbar ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-  }
-  
-  .navbar li {
-    margin: 0 10px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .navbar a:hover {
-    color: #FF69B4;
-    font-size: x-large;
-  }
-  
-  .navbar.scroll {
-    background-color: white;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar.scroll a {
-    color: #e63ae4;
-  } 
-  
-  section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    color: #e63ae4;
-  } 
+}
 
-  body,html {
-    background-color:none;
-    height: 100%;
-    margin:0;
-    padding:0;
-    border: 0;
-    font: 400 15px/1.8 Helvetica;
-    color: rgb(0, 0, 0);
-  }
+#Science{
+  background-color: #93cca2;
 
-  canvas {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
-  .full_width{
-    width: 100%;
-    display:table;
-    table-layout:fixed;
-    border-spacing: 0 0;
-  }
-  .BOOM {
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-bottom: 50px;
-    letter-spacing: -3.5px;
-    line-height: 70px;
-    text-transform: none;
-    font-family: "Helvetica", sans-serif;
-    font-size: 5em;
-    font-weight: bold;
-    color: purple;
-    text-align: center;
-  }
-
-  #Crisistitle, #Problem, #Science, #Generel, #Personal {
-    display:table-row;
-    vertical-align: top;
-  }
-
-  #Crisistitle{
-    background-color: lightblue;
-  }
-
-  #Problem{
-    background-color: #bfa4e0;
-    
-  }
-
-  #Science{
-    background-color: #93cca2;
-
-  }
+}
 
 
-  p {
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    letter-spacing: -3.5px;
-    line-height: 70px;
-    text-transform: none;
-    font-family: "Helvetica", sans-serif;
-    font-size: 5em;
-    font-weight: bold;
-    color: purple;
-    text-align: center;
-	padding: 50px;
-	background-color: white;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
-  }
-
-
-  
-  
-
-
-  
+p {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 5em;
+  font-weight: bold;
+  color: purple;
+  text-align: center;
+padding: 50px;
+background-color: white;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
