@@ -44,7 +44,7 @@
   
   .navbar.scroll a {
     color: #e63ae4;
-  }
+  } 
   
   section {
     height: 100vh;
@@ -53,7 +53,7 @@
     align-items: center;
     font-size: 3em;
     color: #e63ae4;
-  }
+  } 
 
   body,html {
     background-color:none;
@@ -90,12 +90,12 @@
     text-align: center;
   }
 
-  #Crisistitle, #Problem, #Science, #Generel, #Personal {
+  #CrisisTitle, #Problem, #Science, #Generel, #Personal {
     display:table-row;
     vertical-align: top;
   }
 
-  #Crisistitle{
+  #CrisisTitle{
     background-color: lightblue;
   }
 
@@ -124,6 +124,8 @@
     color: purple;
     text-align: center;
   }
+
+  
 
 
   
