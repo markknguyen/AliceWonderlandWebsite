@@ -19,13 +19,6 @@
 .Enter, .Enter1, .Enter2, .Enter3 {
     flex-direction: row;
 }
-/* 
-.Enter1, .Enter2, .Enter3 {
-  animation: blinker 3s linear infinite;
-} */
-
-
-
 
 .navbar {
   background-color: none;
@@ -77,14 +70,6 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ababab, 0 0 40px #878787, 0 0 50px #5d5d5d, 0 0 60px #000000;
   }
 }
-
-@keyframes blinker {
-  0% { opacity: 1;}
-  25% { opacity: 0.75;}
-  50% { opacity: 0.5;}
-  75% { opacity: 0.25;}
-  100% { opacity: 0;}
-  }
  
 .navbar a:hover {
   color: #ffffff;
@@ -131,18 +116,26 @@ canvas {
   /* animation: blinker 3s linear infinite; */
 }
 
-.Transition, #CrisisTitle, #Problem, #Science, #General, #Personal {
+.Transition, #CrisisTitle, #Problem, #Science, #General, #Personal, #chartContainer {
   display:table-row;
   vertical-align: top;
   row-gap: 0;
   max-height: fit-content;
 }
 
+#chartContainer {
+  height: 350px; 
+  width: 100%;
+  background-color: bisque; 
+  padding: 0px;
+	border-radius: 0px;
+  display: flex;
+  margin-bottom: 20%;
+}
+
 #CrisisTitle{
   background-color: #000000;
   height: 800px;
-  display: flex;
-  flex-direction: column;
 } 
 
 .Transition{
@@ -178,9 +171,17 @@ canvas {
   font-weight: bold;
 }
 
-.references{
+.references{  
   background-color: aquamarine;
-
+  margin: 0;
+  letter-spacing: -3.5px;
+  line-height: 100px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 2.4em;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
 .ball-text {
@@ -209,15 +210,14 @@ canvas {
   font-weight: bold;
   color: white;
   text-align: center;
-  transform: scale(0.94);
-  animation: scale 10s forwards cubic-bezier(0.5, 1, 0.89, 1);
 } 
+
 
 .problemtext{
   margin-left: 7%;
   margin-right: 7%;
-  margin-bottom: 50px;
-  margin-top: 75%;
+  margin-bottom: 40%;
+  margin-top: 45%;
   letter-spacing: -3.5px;
   line-height: 70px;
   text-transform: none;
@@ -228,26 +228,57 @@ canvas {
   text-align: center;
 }
 
+#scitext {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5px;
+  margin-top: 40%;
+  letter-spacing: -3.5px;
+  line-height: 20px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+} 
+
 .sciencetext{
   margin-left: 7%;
   margin-right: 7%;
-  margin-bottom: 50px;
-  margin-top: 75%;
+  margin-bottom: 35%;
+  margin-top: 5%;
   letter-spacing: -3.5px;
-  line-height: 70px;
+  line-height: 60px;
   text-transform: none;
   font-family: "Helvetica", sans-serif;
   font-size: 3em;
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-align: center;
+  list-style-type: none;
+}
+
+.yellowtext{
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5px;
+  margin-top: 25%;
+  letter-spacing: -3.5px;
+  line-height: 70px;
+  text-transform: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  color: rgb(223, 216, 0);
+  text-align: center;
 }
 
 .generaltext{
   margin-left: 7%;
   margin-right: 7%;
-  margin-bottom: 50px;
-  margin-top: 75%;
+  margin-bottom: 30%;
+  margin-top: 25%;
   letter-spacing: -3.5px;
   line-height: 70px;
   text-transform: none;
@@ -258,35 +289,18 @@ canvas {
   text-align: center;
 }
 
-.referencetext{
+.personaltext {
   margin-left: 7%;
   margin-right: 7%;
-  margin-bottom: 50px;
-  margin-top: 75%;
+  margin-bottom: 35%;
+  margin-top: 25%;
   letter-spacing: -3.5px;
   line-height: 70px;
   text-transform: none;
   font-family: "Helvetica", sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  text-align: center;
 }
 
-.yellowtext{
-  margin-left: 7%;
-  margin-right: 7%;
-  margin-bottom: 50px;
-  margin-top: 75%;
-  letter-spacing: -3.5px;
-  line-height: 70px;
-  text-transform: none;
-  font-family: "Helvetica", sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  color: rgb(208, 201, 0);
-  text-align: center;
-}
+
 
 
 /* p {
@@ -307,126 +321,8 @@ canvas {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px; */ 
 
-  @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-
   * {
     padding: 0;
     margin: 0;
   }
   
-  
-  /* h1 {
-    font-family: "Montserrat Medium";
-    max-width: 40ch;
-    text-align: center;
-  } */
-  @keyframes scale {
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  
-  span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(4) {
-    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(5) {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(6) {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(7) {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(8) {
-    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(9) {
-    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(10) {
-    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(11) {
-    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(12) {
-    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(13) {
-    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(14) {
-    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(15) {
-    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(16) {
-    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(17) {
-    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(18) {
-    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-
-  span:nth-child(19) {
-    animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-
-  span:nth-child(20) {
-    animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-
-  span:nth-child(21) {
-    animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-
-  span:nth-child(22) {
-    animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-
-  span:nth-child(23) {
-    animation: fade-in 0.8s s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  @keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }

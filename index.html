@@ -73,12 +73,8 @@
         </h1>
     </div>
     <div class = "Transition">
-      <area></area>
+      <p>&nbsp;</p>
     </div> 
-
-    <body>
-      
-      <canvas class="canvas"></canvas>
 
       <div id="Problem"> 
           <p class="problemtext">Millions of Americans suffer from sleep deprivation, which can have devastating consequences on physical and mental health.</p>
@@ -88,7 +84,7 @@
       <div id="Science">
         <p class="sciencetext">Sufficient sleep is essential for resetting your body and mind. Your circadian rhythm controls your internal clock, signaling fatigue when it's time to rest.</p> 
         <p class="sciencetext">Natural light activates your autonomic nervous system to keep you awake, and darkness prompts sleep. However, exposure to artificial light can disturb this balance and disrupt sleep patterns.</p>
-        <p class="sciencetext">Sleep helps regulate </p>
+        <p id="scitext">Sleep helps regulate </p>
         <ul class="sciencetext">
           <li>The Heart and Circulatory System</li>
           <li>Hormones and Metabolism</li>
@@ -97,10 +93,10 @@
         </ul>
         <p class="yellowtext">Research has linked chronic sleep deprivation to several diseases and conditions such as diabetes, heart disease, obesity, and depression.</p>
       </div>
-
-      <div id="chartContainer" style="height: 350px; width: 50%;background-color: bisque; padding: 20px;box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-			border-radius: 10px;justify-content: center;" onmouseenter="chartSet(chart())" onmouseleave="chartDeset()"></div>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      
+      <div id="chartParent">
+      <div id="chartContainer" onmouseenter="chartSet(chart())" onmouseleave="chartDeset()"><script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></div>
+     </div>
 
       <div id="General">
         <p class="generaltext">Sleep deficiency is a pervasive problem in America, affecting millions of individuals more than related chronic diseases.</p>
@@ -115,7 +111,7 @@
       </div>
       
       <nav class="references">
-        <h6 id="refrenceTitle">Further Reading</h6>
+        <p id="referenceTitle">Further Reading</p>
         <p class="referencetext"><a href="https://www.nhlbi.nih.gov/health/sleep" target="_blank">NIH How Sleep Works</a></p>
         <p class="referencetext"><a href="https://www.cdc.gov/sleep/resources.html" target="_blank">CDC Sleep Resources</a></p>
         <p class="referencetext"><a href="https://www.sleepfoundation.org/how-sleep-works/sleep-facts-statistics" target="_blank">Sleep Statistics</a></p>

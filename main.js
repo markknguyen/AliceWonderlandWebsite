@@ -99,7 +99,7 @@ function chartDeset() {
 function chart() {
       
   var chart = new CanvasJS.Chart("chartContainer", {
-    theme: "light1", // "light1", "light2", "dark1", "dark2"
+    theme: "dark1", // "light1", "light2", "dark1", "dark2"
     exportEnabled: false,
     animationEnabled: y,
     title: {
