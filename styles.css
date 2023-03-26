@@ -135,6 +135,7 @@ canvas {
   display:table-row;
   vertical-align: top;
   row-gap: 0;
+  max-height: fit-content;
 }
 
 #CrisisTitle{
