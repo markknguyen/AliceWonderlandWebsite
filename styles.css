@@ -90,22 +90,38 @@ canvas {
   text-align: center;
 }
 
-#Crisistitle, #Problem, #Science, #Generel, #Personal {
+.Transition, #CrisisTitle, #Problem, #Science, #Generel, #Personal {
   display:table-row;
   vertical-align: top;
+  row-gap: 0;
 }
 
-#Crisistitle{
-  background-color: lightblue;
+#CrisisTitle{
+  background-color: #000000;
+  height: 1000px;
+}
+
+.Transition{
+  background: linear-gradient( black,rgb(0, 0, 0), rgb(7, 3, 59), rgb(26, 16, 121), rgb(42, 17, 186) );
+  height: 1000px;
 }
 
 #Problem{
-  background-color: #bfa4e0;
-  
+  background-color: rgb(81, 0, 128);
 }
 
 #Science{
-  background-color: #93cca2;
+  background-color: white;
+
+}
+
+#General{
+  background: green;
+
+}
+
+#Personal{
+  background-color: aliceblue;
 
 }
 
@@ -123,8 +139,8 @@ p {
   font-weight: bold;
   color: purple;
   text-align: center;
-padding: 50px;
-background-color: white;
-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-border-radius: 10px;
+  /* padding: 50px;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; */
 }
