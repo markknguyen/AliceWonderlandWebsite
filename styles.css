@@ -110,7 +110,7 @@ canvas {
 }
 .full_width{
   width: 100%;
-  display:t;
+  display:table;
   empty-cells: hide;
   table-layout:fixed;
   border-spacing: 0;
