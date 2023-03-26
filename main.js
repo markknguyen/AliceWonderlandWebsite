@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(type, 2000); // Adjust the initial waiting time in milliseconds here
 });
 
+
 const canvas = document.querySelector(".canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -76,6 +77,8 @@ gsap.to(ball, {
   onUpdate: render,
 });
 
+
+gsap.fromTo(".Entrance", {opacity:1}, {opacity:0, scrollTrigger: {scrub:1, start:"0%", end:"100%"}})
 
 
 let x = 0;

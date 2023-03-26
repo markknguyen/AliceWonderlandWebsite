@@ -2,6 +2,31 @@
   display: none;
 }
 
+.Entrance {
+  background-color: none;
+  width: 100%;
+  color: white;
+  height: auto;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+}
+
+.Enter, .Enter1, .Enter2, .Enter3 {
+    flex-direction: row;
+}
+/* 
+.Enter1, .Enter2, .Enter3 {
+  animation: blinker 3s linear infinite;
+} */
+
+
+
+
 .navbar {
   background-color: none;
   position: fixed;
@@ -51,6 +76,14 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ababab, 0 0 40px #878787, 0 0 50px #5d5d5d, 0 0 60px #000000;
   }
 }
+
+@keyframes blinker {
+  0% { opacity: 1;}
+  25% { opacity: 0.75;}
+  50% { opacity: 0.5;}
+  75% { opacity: 0.25;}
+  100% { opacity: 0;}
+  }
  
 .navbar a:hover {
   color: #ffffff;
@@ -92,6 +125,7 @@ canvas {
   font-weight: bold;
   color: purple;
   text-align: center;
+  /* animation: blinker 3s linear infinite; */
 }
 
 .Transition, #CrisisTitle, #Problem, #Science, #Generel, #Personal {
