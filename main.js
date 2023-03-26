@@ -80,14 +80,6 @@ gsap.to(ball, {
 
 gsap.fromTo(".Entrance", {opacity:1}, {opacity:0, scrollTrigger: {scrub:1, start:"0%", end:"100%"}})
 
-      start: "50%",
-      end: "60%",
-    },
-    onComplete: () => {
-      gsap.to(".ball-text", { opacity: 0 });
-    },
-  }
-);
 
 let x = 0;
 let y = true;
