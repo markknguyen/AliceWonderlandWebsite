@@ -58,7 +58,7 @@
   body,html {
     background-color:none;
     height: 100%;
-    margin: 0;
+    margin:0;
     padding:0;
     border: 0;
     font: 400 15px/1.8 Helvetica;
@@ -76,7 +76,7 @@
     table-layout:fixed;
     border-spacing: 0 0;
   }
-  .Crisis {
+  .BOOM {
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 50px;
@@ -90,22 +90,22 @@
     text-align: center;
   }
 
-  #CrisisTitle, #Problem, #Science, #Generel, #Personal {
+  #Crisistitle, #Problem, #Science, #Generel, #Personal {
     display:table-row;
     vertical-align: top;
   }
 
-  #CrisisTitle{
+  #Crisistitle{
     background-color: lightblue;
   }
 
   #Problem{
-    background-color: #a39c72;
+    background-color: #bfa4e0;
     
   }
 
   #Science{
-    background-color: #b29e2f;
+    background-color: #93cca2;
 
   }
 
@@ -123,8 +123,14 @@
     font-weight: bold;
     color: purple;
     text-align: center;
+	padding: 50px;
+	background-color: white;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
   }
 
+
+  
   
 
 

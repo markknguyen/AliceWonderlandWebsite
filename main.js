@@ -1,3 +1,5 @@
+
+
 const header = document.querySelector('.Crisis');
 const text = ['We spend a third of our lives in a state of inactivity. Yet, during this time... Something truly magical happens.'];
 let index = 0;
