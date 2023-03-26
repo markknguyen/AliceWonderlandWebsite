@@ -247,7 +247,9 @@ canvas {
   text-align: center;
 } 
 
-#S
+#scibox {
+  display: flex;
+}
 
 .sciencetext{
   margin-left: 7%;
