@@ -75,22 +75,32 @@ gsap.to(ball, {
   },
   onUpdate: render,
 });
-var x = 0;
+
+
+
+let x = 0;
+let y = true;
+
 function chartSet(myCallback) {
   x = 1;
+  y = false;
   if (x = 1) {
     myCallback;
   }
+}
+
+function chartDeset() {
+  y = false;
 }
 
 function chart() {
       
   var chart = new CanvasJS.Chart("chartContainer", {
     theme: "light1", // "light1", "light2", "dark1", "dark2"
-    exportEnabled: true,
-    animationEnabled: true,
+    exportEnabled: false,
+    animationEnabled: y,
     title: {
-      text: "Percentage of Americans who suffer from sleep deprevation"
+      text: "Percentage of Americans who suffer from sleep deprivation"
     },
     data: [{
       type: "pie",
@@ -108,13 +118,6 @@ function chart() {
   });
   chart.render();
   }
-
-  // function chartDeset() {
-  //   x = 0;
-  // }
-
-      // document.getElementById("chartContainer").onmouseenter = chart;
-
 
 
 gsap.from(".navbar", {opacity:0, scrub:true, 
