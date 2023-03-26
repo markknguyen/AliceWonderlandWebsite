@@ -122,6 +122,7 @@ gsap.from(".navbar", {opacity:0, scrub:true,
 
 // gsap.from(".crisistext", {opacity:0, scrub:true, scrollTrigger:{duration:1, scrub: true, start(180000)}})
 
+    
 images[0].onload = render;
 
 function render() {

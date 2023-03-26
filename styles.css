@@ -1,17 +1,23 @@
+::-webkit-scrollbar {
+  display: none;
+}
 
 .navbar {
-  background-color: #e63ae4;
+  background-color: rgb(81, 0, 128);
   position: fixed;
   width: 100%;
-  top: 0;
+  top: -.75%;
   left: 0;
   z-index: 999;
   overflow: hidden;
-  transition: background-color 1s ease-in-out;
+  padding: 20px;
+	box-shadow: 0px 7px 10px rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
 }
 
 .navbar ul {
-  margin: 0;
+  margin-top: -2%;
+  margin-bottom: -2%;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -27,34 +33,32 @@
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  transition: color 3s ease-in-out;
+  font-family: 'Helvetica', sans-serif;
+  text-shadow: 0 0 40px whitesmoke;
+  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate; */
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(119, 119, 119), 0 0 30px #9c9c9c, 0 0 40px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ababab, 0 0 40px #878787, 0 0 50px #5d5d5d, 0 0 60px #000000;
+  }
 }
  
 .navbar a:hover {
-  color: #FF69B4;
-  font-size: x-large;
+  color: #ffffff;
+  font-size:x-large;
+  font-weight:bolder;
+  transition: black 2s ease-out;
 }
-
-.navbar.scroll {
-  background-color: white;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.scroll a {
-  color: #e63ae4;
-} 
-
-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3em;
-  color: #e63ae4;
-} 
 
 body,html {
   background-color:none;
@@ -64,7 +68,6 @@ body,html {
   border: 0;
   font: 400 15px/1.8 Helvetica;
   color: rgb(0, 0, 0);
-  /* overflow-x: hidden; */
 }
 
 canvas {
