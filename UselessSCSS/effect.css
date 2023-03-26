@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto:ital,wght@1,100&display=swap");
-#CrisisTitle {
+.CrisisTitle {
   background-color: black;
   height: 1000px;
   display: table-row;
   vertical-align: top;
   row-gap: 0;
 }
-#CrisisTitle:hover p span {
+.CrisisTitle:hover p span {
   -webkit-animation: smoke 1.75s ease-in forwards;
           animation: smoke 1.75s ease-in forwards;
 }
