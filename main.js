@@ -76,24 +76,28 @@ gsap.to(ball, {
   onUpdate: render,
 });
 
-// gsap.fromTo(
-//   ".ball-text",
-//   {
-//     opacity: 0,
+gsap.from(".navbar", {opacity:0, scrub:true, 
+    scrollTrigger: {duration:1, scrub:true, start:"600%", end:"650%"}})
+
+// tl.fromTo(
+//   ".navbar",
+//   {opacity: 0,
+//   ease: "none",
+//   scrollTrigger: {
+//     scrub: true,
+//     end: ""
+//   },
 //   },
 //   {
 //     opacity: 1,
 //     scrollTrigger: {
 //       scrub: 1,
 
-//       start: "50%",
-//       end: "60%",
+//       start: "100%"
 //     },
-//     onComplete: () => {
-//       gsap.to(".ball-text", { opacity: 0 });
-//     },
+//     {duration}
 //   }
-// );
+//  );
 
 images[0].onload = render;
 
