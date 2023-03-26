@@ -99,7 +99,7 @@ function chartDeset() {
 function chart() {
       
   var chart = new CanvasJS.Chart("chartContainer", {
-    theme: "dark1", // "light1", "light2", "dark1", "dark2"
+    theme: "light1", // "light1", "light2", "dark1", "dark2"
     exportEnabled: false,
     animationEnabled: y,
     title: {
@@ -124,7 +124,7 @@ function chart() {
 
 
 gsap.from(".navbar", {opacity:0, scrub:true, 
-    scrollTrigger: {duration:1, scrub:true, start:"600%", end:"650%"}})
+    scrollTrigger: {duration:1, scrub:true, start:"550%", end:"650%"}})
 
 // gsap.from(".crisistext", {opacity:0, scrub:true, scrollTrigger:{duration:1, scrub: true, start(180000)}})
 
