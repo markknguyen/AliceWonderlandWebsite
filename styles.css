@@ -3,16 +3,14 @@
 }
 
 .navbar {
-  background-color: rgb(81, 0, 128);
+  background-color: none;
   position: fixed;
   width: 100%;
   top: -.75%;
   left: 0;
   z-index: 999;
   overflow: hidden;
-  padding: 20px;
-	box-shadow: 0px 7px 10px rgba(255, 255, 255, 0.1);
-	border-radius: 5px;
+  padding: 40px;
 }
 
 .navbar ul {
@@ -32,13 +30,14 @@
 }
 
 .navbar a {
-  text-decoration: none;
+  text-decoration:none;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bolder;
+  letter-spacing: -1px;
   transition: color 3s ease-in-out;
   font-family: 'Helvetica', sans-serif;
-  text-shadow: 0 0 40px whitesmoke;
+  text-shadow:  0 0 5px white, 0 0 10px white, 0 0 20px whitesmoke;
   /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate; */
