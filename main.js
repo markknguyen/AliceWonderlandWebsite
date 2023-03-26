@@ -75,14 +75,52 @@ gsap.to(ball, {
   },
   onUpdate: render,
 });
+var x = 0;
+function chartSet(myCallback) {
+  x = 1;
+  if (x = 1) {
+    myCallback;
+  }
+}
+
+function chart() {
+      
+  var chart = new CanvasJS.Chart("chartContainer", {
+    theme: "light1", // "light1", "light2", "dark1", "dark2"
+    exportEnabled: true,
+    animationEnabled: true,
+    title: {
+      text: "Percentage of Americans who suffer from sleep deprevation"
+    },
+    data: [{
+      type: "pie",
+      startAngle: 25,
+      toolTipContent: "<b>{label}</b>: {y}%",
+      showInLegend: "true",
+      legendText: "{label}",
+      indexLabelFontSize: 16,
+      indexLabel: "{label} - {y}%",
+      dataPoints: [
+        { y: 79.4, label: "Not-affected" },
+        { y: 20.6, label: "Affected" }
+      ]
+    }]
+  });
+  chart.render();
+  }
+
+  // function chartDeset() {
+  //   x = 0;
+  // }
+
+      // document.getElementById("chartContainer").onmouseenter = chart;
+
 
 
 gsap.from(".navbar", {opacity:0, scrub:true, 
     scrollTrigger: {duration:1, scrub:true, start:"600%", end:"650%"}})
 
-gsap.fromTo(".CrisisTitle", {opacity:0, scrub:true, 
-    scrollTrigger: {scrub:true, start:"bottom 50%"}},
-    {opacity:1, duration:2})
+// gsap.from(".crisistext", {opacity:0, scrub:true, scrollTrigger:{duration:1, scrub: true, start(180000)}})
 
 images[0].onload = render;
 
